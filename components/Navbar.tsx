@@ -1,12 +1,11 @@
-// "use client";
+"use client";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faBars, faPen } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-
 function Navbar() {
-const pathname= usePathname();
+  const pathname = usePathname();
   console.log(pathname);
   return (
     <div className="w-full py-5 px-7 flex justify-between bg-lightGreen items-center ">
