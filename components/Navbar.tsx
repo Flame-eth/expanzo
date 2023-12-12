@@ -5,9 +5,9 @@ import Link from "next/link";
 
 function Navbar() {
   return (
-    <div className="w-full py-3 px-7 flex justify-between bg-lightGreen items-center ">
+    <div className="w-full py-5 px-7 flex justify-between bg-lightGreen items-center ">
       <div className="flex gap-7 items-center">
-        <FontAwesomeIcon icon={faBars} className="text-[25px] text-[#87bfb2]" />
+        <FontAwesomeIcon icon={faBars} className="text-[25px] text-[#87bfb2] cursor-pointer" />
         <Link href="/">
           <h1 className="uppercase font-base font-bold text-white ">
             Dashboard
@@ -18,7 +18,7 @@ function Navbar() {
         </Link>
       </div>
       <div className="flex gap-7 items-center">
-        <div className="flex gap-3  items-center ">
+        <div className="flex gap-3  items-center cursor-pointer ">
           <FontAwesomeIcon
             icon={faUser}
             className="text-[15px] text-[#87bfb2] border rounded-full p-2 bg-[#00c29d]"
@@ -27,7 +27,7 @@ function Navbar() {
             Login
           </h1>
         </div>
-        <div className="flex gap-3  items-center ">
+        <div className="flex gap-3  items-center cursor-pointer ">
           <FontAwesomeIcon
             icon={faPen}
             className="text-[15px] text-[#87bfb2] border rounded-full p-2 bg-[#00c29d]"
