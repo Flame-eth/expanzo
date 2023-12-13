@@ -3,10 +3,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faBars, faPen } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 function Navbar() {
   const pathname = usePathname();
-  console.log(pathname);
+  // console.log(pathname);
   return (
     <div className="w-full py-5 px-7 flex justify-between bg-lightGreen items-center ">
       <div className="flex gap-7 items-center">
@@ -25,6 +26,9 @@ function Navbar() {
           </h1>
         </Link>
       </div>
+      {pathname !== "/" && (
+        <Image src="/logo-no-bg.svg" width={80} height={20} alt="logo" />
+      )}
       <div className="hidden md:flex gap-7 items-center">
         <div className="flex gap-3  items-center cursor-pointer ">
           <FontAwesomeIcon
