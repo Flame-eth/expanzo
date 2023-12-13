@@ -7,13 +7,13 @@ function Footer() {
       <Image src="./logo.svg" alt="logo" width={200} height={200} />
 
       <div className="flex gap-5 items-center">
-        <h1 className="text-xs md:text-base font-sans font-extrabold  cursor-pointer text-black hover:text-[#87bfb2] uppercase">
+        <h1 className="footer__link">
           Contact
         </h1>
-        <h1 className="text-xs md:text-base font-sans font-extrabold  cursor-pointer text-black hover:text-[#87bfb2] uppercase">
+        <h1 className="footer__link">
           Phones
         </h1>
-        <h1 className="text-xs md:text-base font-sans font-extrabold  cursor-pointer text-black hover:text-[#87bfb2] uppercase">
+        <h1 className="footer__link">
           Top Search
         </h1>
       </div>

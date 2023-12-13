@@ -7,7 +7,7 @@ import Image from "next/image";
 
 function Navbar() {
   const pathname = usePathname();
-  // console.log(pathname);
+
   return (
     <div className="w-full py-5 px-7 flex justify-between bg-lightGreen items-center ">
       <div className="flex gap-7 items-center">
@@ -27,7 +27,13 @@ function Navbar() {
         </Link>
       </div>
       {pathname !== "/" && (
-        <Image src="/logo-no-bg.svg" width={80} height={20} alt="logo" />
+        <Image
+          src="/logo-no-bg.svg"
+          width={80}
+          height={20}
+          alt="logo"
+          className="hidden sm:block"
+        />
       )}
       <div className="hidden md:flex gap-7 items-center">
         <div className="flex gap-3  items-center cursor-pointer ">
