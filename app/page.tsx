@@ -1,8 +1,9 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 config.autoAddCss = false;
 
@@ -10,8 +11,32 @@ export default function Home() {
   const [activeOption, setActiveOption] = useState<
     "All" | "Companies" | "Phones"
   >("All");
+  const [loading, setLoading] = useState<boolean>(true);
 
   const options = ["All", "Companies", "Phones"];
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center h-screen bg-black/5">
+        <motion.div
+          animate={{ scale: [null, 1, 1.2, 1] }}
+          transition={{ duration: 0.7, repeat: Infinity }}
+          exit={{ opacity: 0 }}
+        >
+          <Image src="./logo.svg" alt="logo" width={80} height={30} />
+        </motion.div>
+      </div>
+    );
+  }
+
   return (
     <main className=" flex flex-col  items-center justify-center gap-14 my-40 ">
       <Image src="./logo.svg" alt="logo" width={300} height={200} />
