@@ -8,3 +8,17 @@
         @apply text-xs md:text-base font-sans font-extrabold  cursor-pointer text-black hover:text-[#87bfb2] uppercase
     }
 }
+
+/* For WebKit based browsers (Chrome, Safari, Opera) */
+::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #149576; /* Color of the scrollbar thumb */
+    border-radius: 50px;
+  }

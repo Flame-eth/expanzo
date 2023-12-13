@@ -18,7 +18,7 @@ export default function Home() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -38,7 +38,7 @@ export default function Home() {
   }
 
   return (
-    <main className=" flex flex-col  items-center justify-center gap-14 my-40 ">
+    <main className=" flex flex-col  items-center justify-center gap-14 my-32 ">
       <Image src="./logo.svg" alt="logo" width={300} height={200} />
 
       <div className="flex gap-5 items-center">

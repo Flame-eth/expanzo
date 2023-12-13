@@ -4,7 +4,7 @@ import React from "react";
 
 function page() {
   return (
-    <main className="flex flex-col  items-center justify-center gap-14 my-40 ">
+    <main className="flex flex-col  items-center justify-center gap-14 my-32 ">
       <h1 className="font-sans text-2xl text-black font-extrabold leading-10 tracking-wide text-center">
         Contact
       </h1>

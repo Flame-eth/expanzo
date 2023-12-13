@@ -9,7 +9,7 @@ function Navbar() {
   const pathname = usePathname();
 
   return (
-    <div className="w-full py-5 px-7 flex justify-between bg-lightGreen items-center ">
+    <div className="w-full px-10 flex justify-between bg-lightGreen items-center h-20 ">
       <div className="flex gap-7 items-center">
         <FontAwesomeIcon
           icon={faBars}
@@ -39,18 +39,18 @@ function Navbar() {
         <div className="flex gap-3  items-center cursor-pointer ">
           <FontAwesomeIcon
             icon={faUser}
-            className="text-[15px] text-[#87bfb2] border rounded-full p-2 bg-[#00c29d]"
+            className="text-[15px] text-[#d3dad8] border rounded-full p-2 bg-[#00c29d]"
           />
-          <h1 className="uppercase text-xs md:text-base font-medium text-[#87bfb2] ">
+          <h1 className="uppercase text-xs md:text-base font-medium text-[#d3dad8] ">
             Login
           </h1>
         </div>
         <div className="flex gap-3  items-center cursor-pointer ">
           <FontAwesomeIcon
             icon={faPen}
-            className="text-[15px] text-[#87bfb2] border rounded-full p-2 bg-[#00c29d]"
+            className="text-[15px] text-[#d3dad8] border rounded-full p-2 bg-[#00c29d]"
           />
-          <h1 className="uppercase text-xs md:text-base font-medium text-[#87bfb2] ">
+          <h1 className="uppercase text-xs md:text-base font-medium text-[#d3dad8] ">
             Registration
           </h1>
         </div>
